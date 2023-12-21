@@ -1,4 +1,4 @@
-package com.example.lesson4;
+package com.example.ex4;
 import java.util.Random;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -20,7 +20,7 @@ public class Banco {
     public void abrirConta(char t, boolean s, String d, byte n , float m){
         Scanner scanner = new Scanner(System.in);
 
-              this.numConata = n;
+        this.numConata = n;
         this.dono = d;
         this.status = s;
         this.tipo = t;

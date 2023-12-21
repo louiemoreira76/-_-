@@ -1,5 +1,4 @@
-    package com.example.lesson4;
-    import java.util.Scanner;
+    package com.example.ex4;
 
     public class lesson4 {
         public static void main(String[] args){
