@@ -1,57 +1,26 @@
 package com.example;
-
-import java.util.ArrayList;
-import javax.print.DocFlavor.STRING;
+import java.util.Locale;
+import java.util.Scanner;
 
 public class App 
 {
     public static void main( String[] args ){
-        System.out.println("Hello World!" );
+        Scanner read = new Scanner(System.in).useLocale(Locale.US);
+        int soma = 0;
+        int contador = 0;
 
-        //short, int, long
-        byte age = 19;
+        for(int i = 1; i <= 6; i++){
+            int num = read.nextInt();
 
-        char P = 'L';
+            if(num > 0){
+            contador++;
+            System.out.println("Numero digitado Positivo: " + num);
+            soma = num + soma;
+            }
 
-        boolean lindo = true;
-
-        String nome = "Luis";
-
-        //tem double tambem
-        float salario = 1350.67F;
-
-        ArrayList<Integer> skins = new ArrayList<Integer>();
-        skins.add(80);
-        skins.remove(0);
-        skins.get(0);
-        skins.size();
-
-        //int[] skins = {3,3,3}; //inicializando assim
-        //int[] skins = new int[10]; //iniciou o array
-
-        if (age >= 19) {
-            System.out.println(nome);
         }
-
-        for(int i = 0; i < age; i++){
-            System.out.println(P);
-        }
-
-        while (lindo == true) {
-            System.out.println("Maravinhoso!");
-        }
-
-        //casting Implicito
-        int amuwr = 0;
-        double amuwro = amuwr;
-
-        //casting explicito
-        amuwr = (int) amuwro;
-
-        char letra = 'a';
-        String food = String.valueOf(letra);
-
-        letra = food.charAt(0);
-        String guspe = String.valueOf(amuwr);
+        System.out.println(soma);
+        int divisao = soma / contador;
+        System.out.println("A média dos números positivos é: " + divisao);
     }
 }

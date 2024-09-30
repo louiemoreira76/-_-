@@ -3,5 +3,6 @@
     "launch": {
         "configurations": [],
         "compounds": []
-    }
+    },
+    "java.debug.settings.onBuildFailureProceed": true
 }
